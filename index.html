@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Eldenstead Network Rules</title>
+<style>
+body{margin:0;background:#0f0f0f;color:#e8e1d4;font-family:Segoe UI,sans-serif}
+.hero{padding:60px 20px;text-align:center;background:linear-gradient(180deg,#5a3d22,#121212)}
+.hero h1{font-size:64px;margin:0;color:#d9b16f}
+.hero p{max-width:900px;margin:auto}
+.container{max-width:1400px;margin:auto;padding:20px}
+.search{width:100%;padding:15px;border-radius:10px;border:none;margin-bottom:20px}
+.section{background:#1b1b1b;margin-bottom:16px;border-radius:12px;overflow:hidden;border:1px solid #333}
+.section h2{margin:0;padding:18px;background:#6b4a2d;cursor:pointer}
+.content{padding:20px}
+.rule{background:#262626;margin:10px 0;padding:15px;border-left:5px solid #d9b16f;border-radius:6px}
+.pun{font-weight:bold;color:#ffd58f;margin-top:8px}
+table{width:100%;border-collapse:collapse}
+td,th{border:1px solid #444;padding:10px}
+th{background:#6b4a2d}
+.footer{text-align:center;padding:30px;color:#aaa}
+</style>
+<script>
+function toggle(id){
+ let e=document.getElementById(id);
+ e.style.display=e.style.display==='none'?'block':'none';
+}
+function searchRules(){
+ let q=document.getElementById('search').value.toLowerCase();
+ document.querySelectorAll('.rule').forEach(r=>{
+   r.style.display=r.innerText.toLowerCase().includes(q)?'block':'none';
+ });
+}
+</script>
+</head>
+<body>
+<div class="hero">
+<h1>⚔ Eldenstead Network Rules</h1>
+<p>Official Rules, Punishments, Towny Policies, Warfare Regulations, Economy Policies, Appeals & Community Standards.</p>
+</div>
+
+<div class="container">
+<input id="search" class="search" onkeyup="searchRules()" placeholder="Search all rules...">
+
+<div class="section"><h2 onclick="toggle('s0')">Communication Rules</h2><div id="s0" class="content"><div class="rule"><b>Spam</b><div class="pun">Warning • 30m Mute • 24h Mute</div></div><div class="rule"><b>Excessive Caps</b><div class="pun">Warning • 30m Mute • 24h Mute</div></div><div class="rule"><b>Character Spam</b><div class="pun">Warning • Mute • Ban</div></div><div class="rule"><b>Advertising</b><div class="pun">7d Ban • 30d Ban • Permanent Ban</div></div><div class="rule"><b>Toxicity</b><div class="pun">Warning • 12h Mute • 7d Ban</div></div><div class="rule"><b>Harassment</b><div class="pun">12h Mute • 7d Ban • Permanent Ban</div></div><div class="rule"><b>Staff Harassment</b><div class="pun">Mute • Ban • Permanent Ban</div></div><div class="rule"><b>Staff Impersonation</b><div class="pun">Warning • 7d Ban • Permanent Ban</div></div><div class="rule"><b>False Reports</b><div class="pun">Warning • 7d Ban • 30d Ban</div></div><div class="rule"><b>Hate Speech</b><div class="pun">30d Ban • Permanent Ban</div></div><div class="rule"><b>Doxxing</b><div class="pun">Permanent Ban</div></div><div class="rule"><b>DDoS Threats</b><div class="pun">Permanent Ban</div></div><div class="rule"><b>Real-Life Threats</b><div class="pun">Permanent Ban</div></div></div></div><div class="section"><h2 onclick="toggle('s1')">Towny & Nation Rules</h2><div id="s1" class="content"><div class="rule"><b>Alt Town Abuse</b><div class="pun">Town Removal • 14d Ban • Permanent Ban</div></div><div class="rule"><b>Claim Blocking</b><div class="pun">Warning • Claim Removal • 7d Ban</div></div><div class="rule"><b>Nation Abuse</b><div class="pun">14d Ban • 30d Ban • Permanent Ban</div></div><div class="rule"><b>Political Betrayal</b><div class="pun">Allowed Gameplay</div></div><div class="rule"><b>Town Ownership Responsibility</b><div class="pun">Leader Responsible</div></div><div class="rule"><b>Bypassing Claim Limits</b><div class="pun">14d Ban • 30d Ban • Permanent Ban</div></div><div class="rule"><b>Claim Exploits</b><div class="pun">30d Ban • Permanent Ban</div></div></div></div><div class="section"><h2 onclick="toggle('s2')">Warfare Rules</h2><div id="s2" class="content"><div class="rule"><b>Illegal Raiding</b><div class="pun">Rollback+7d Ban • 30d Ban • Permanent Ban</div></div><div class="rule"><b>Combat Logging</b><div class="pun">Warning • 24h Ban • 7d Ban</div></div><div class="rule"><b>War Exploits</b><div class="pun">14d Ban • 30d Ban • Permanent Ban</div></div><div class="rule"><b>Combat Exploits</b><div class="pun">30d Ban • Permanent Ban</div></div><div class="rule"><b>Claim Bypass</b><div class="pun">14d Ban • 30d Ban • Permanent Ban</div></div><div class="rule"><b>Unauthorized Destruction</b><div class="pun">Rollback • Ban • Permanent Ban</div></div><div class="rule"><b>War Manipulation</b><div class="pun">14d Ban • 30d Ban • Permanent Ban</div></div></div></div><div class="section"><h2 onclick="toggle('s3')">Economy Rules</h2><div id="s3" class="content"><div class="rule"><b>Scamming</b><div class="pun">7d Ban • 30d Ban • Permanent Ban</div></div><div class="rule"><b>Auction Fraud</b><div class="pun">7d Ban • 30d Ban • Permanent Ban</div></div><div class="rule"><b>Market Manipulation</b><div class="pun">Warning • 7d Ban • 30d Ban</div></div><div class="rule"><b>Real World Trading</b><div class="pun">Permanent Ban</div></div><div class="rule"><b>Chargebacks</b><div class="pun">Permanent Ban</div></div><div class="rule"><b>Duped Item Trading</b><div class="pun">30d Ban • Permanent Ban</div></div></div></div><div class="section"><h2 onclick="toggle('s4')">Gameplay Rules</h2><div id="s4" class="content"><div class="rule"><b>AFK Automation</b><div class="pun">Warning • 7d Ban • 30d Ban</div></div><div class="rule"><b>Exploiting Bugs</b><div class="pun">30d Ban • Permanent Ban</div></div><div class="rule"><b>Duplication Glitches</b><div class="pun">30d Ban • Permanent Ban</div></div><div class="rule"><b>Griefing Protected Claims</b><div class="pun">Rollback • 7d Ban • 30d Ban</div></div><div class="rule"><b>Intentionally Lagging Server</b><div class="pun">30d Ban • Permanent Ban</div></div><div class="rule"><b>Trap Abuse</b><div class="pun">Warning • Ban • Permanent Ban</div></div></div></div><div class="section"><h2 onclick="toggle('s5')">Account Rules</h2><div id="s5" class="content"><div class="rule"><b>Ban Evasion</b><div class="pun">Permanent Ban</div></div><div class="rule"><b>Alt Abuse</b><div class="pun">14d Ban • 30d Ban • Permanent Ban</div></div><div class="rule"><b>Vote Abuse</b><div class="pun">14d Ban • Permanent Ban</div></div><div class="rule"><b>Account Sharing</b><div class="pun">At Your Own Risk</div></div><div class="rule"><b>Username Violations</b><div class="pun">Name Change • Ban</div></div></div></div><div class="section"><h2 onclick="toggle('s6')">Modifications & Clients</h2><div id="s6" class="content"><div class="rule"><b>X-Ray</b><div class="pun">30d Ban • Permanent Ban</div></div><div class="rule"><b>Combat Hacks</b><div class="pun">Permanent Ban</div></div><div class="rule"><b>Movement Hacks</b><div class="pun">Permanent Ban</div></div><div class="rule"><b>Reach</b><div class="pun">Permanent Ban</div></div><div class="rule"><b>KillAura</b><div class="pun">Permanent Ban</div></div><div class="rule"><b>AutoClickers</b><div class="pun">30d Ban • Permanent Ban</div></div><div class="rule"><b>Macros</b><div class="pun">30d Ban • Permanent Ban</div></div><div class="rule"><b>Automation Mods</b><div class="pun">30d Ban • Permanent Ban</div></div><div class="rule"><b>Allowed Clients</b><div class="pun">Lunar, Badlion, Optifine, Sodium</div></div></div></div><div class="section"><h2 onclick="toggle('s7')">Discord Rules</h2><div id="s7" class="content"><div class="rule"><b>Spam</b><div class="pun">Warning • Mute • Ban</div></div><div class="rule"><b>Harassment</b><div class="pun">Mute • Ban • Permanent Ban</div></div><div class="rule"><b>NSFW Content</b><div class="pun">Ban</div></div><div class="rule"><b>Advertising</b><div class="pun">Ban</div></div><div class="rule"><b>Hate Speech</b><div class="pun">Permanent Ban</div></div><div class="rule"><b>Doxxing</b><div class="pun">Permanent Ban</div></div></div></div><div class="section"><h2 onclick="toggle('s8')">Appeals & Reports</h2><div id="s8" class="content"><div class="rule"><b>False Evidence</b><div class="pun">Ban</div></div><div class="rule"><b>Appeal Abuse</b><div class="pun">Warning • Ban</div></div><div class="rule"><b>Staff Discretion</b><div class="pun">Administration Decision Final</div></div></div></div>
+<div class="section">
+<h2 onclick="toggle('matrix')">Punishment Matrix</h2>
+<div id="matrix" class="content">
+<table>
+<tr><th>Severity</th><th>Typical Action</th></tr>
+<tr><td>Minor</td><td>Warning / Mute</td></tr>
+<tr><td>Moderate</td><td>Temporary Ban</td></tr>
+<tr><td>Major</td><td>Extended Ban</td></tr>
+<tr><td>Severe</td><td>Permanent Ban</td></tr>
+</table>
+</div>
+</div>
+
+<div class="footer">
+Eldenstead Administration reserves the right to interpret, modify, and enforce rules as necessary to protect gameplay and the community.
+</div>
+</div>
+</body>
+</html>
